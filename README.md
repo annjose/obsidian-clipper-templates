@@ -7,6 +7,7 @@ To install templates, see instructions in the official [Obsidian Web Clipper doc
 My new / custom templates
 - [Highlights](/templates/highlights-clipper.json)
 - [Goodreads (customized)](/templates/goodreads-clipper.json)
+- [Default (customized)](/templates/default-clipper.json)
 
 Generic and schema-based templates
 

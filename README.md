@@ -1,8 +1,12 @@
-Templates for [Obsidian Web Clipper](https://github.com/obsidianmd/obsidian-clipper). Works with the templates in [my Obsidian vault](https://github.com/kepano/kepano-obsidian).
+Templates for [Obsidian Web Clipper](https://github.com/obsidianmd/obsidian-clipper) with customozations that I found to be useful
 
 To install templates, see instructions in the official [Obsidian Web Clipper documentation](https://help.obsidian.md/web-clipper/templates) repo.
 
 ## Templates
+
+My new / custom templates
+- [Highlights](/templates/highlights-clipper.json)
+- [Goodreads (customized)](/templates/goodreads-clipper.json)
 
 Generic and schema-based templates
 

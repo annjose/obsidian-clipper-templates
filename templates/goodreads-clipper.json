@@ -2,9 +2,7 @@
 	"schemaVersion": "0.1.0",
 	"name": "Goodreads",
 	"behavior": "create",
-	"noteNameFormat": "{{selector:.BookPageTitleSection__title h1}}",
-	"path": "References",
-	"noteContentFormat": "{{selector:.BookPageMetadataSection__description}}",
+	"noteContentFormat": "{{title}} by {{author}} - {{url}}\n\n![|200]({{schema:image}})\n\n{{selector:.BookPageMetadataSection__description}}",
 	"properties": [
 		{
 			"name": "title",
@@ -65,9 +63,16 @@
 			"name": "tags",
 			"value": "books, to-read",
 			"type": "multitext"
+		},
+		{
+			"name": "url",
+			"value": "{{url}}",
+			"type": "text"
 		}
 	],
 	"triggers": [
 		"https://www.goodreads.com/book/"
-	]
+	],
+	"noteNameFormat": "{{selector:.BookPageTitleSection__title h1}}",
+	"path": "Good Reads"
 }

@@ -1,0 +1,52 @@
+{
+	"schemaVersion": "0.1.0",
+	"name": "Default",
+	"behavior": "create",
+	"noteContentFormat": "[{{title}}]({{url}})\n\n## Summary\n{{\"Generate a summary of the page capturing the main essence of the content. If the summary is long, divide into smaller sections\"}}\n\n{{\"Extract important quotes (not more than 5) from the page. Do not enclose the text in double quotes\"|blockquote}}",
+	"properties": [
+		{
+			"name": "title",
+			"value": "{{title}}",
+			"type": "text"
+		},
+		{
+			"name": "source",
+			"value": "{{url}}",
+			"type": "text"
+		},
+		{
+			"name": "author",
+			"value": "{{author|split:\\\", \\\"|wikilink|join}}",
+			"type": "multitext"
+		},
+		{
+			"name": "published",
+			"value": "{{published}}",
+			"type": "date"
+		},
+		{
+			"name": "created",
+			"value": "{{date}}",
+			"type": "date"
+		},
+		{
+			"name": "description",
+			"value": "{{description}}",
+			"type": "text"
+		},
+		{
+			"name": "tags",
+			"value": "clippings",
+			"type": "multitext"
+		},
+		{
+			"name": "referred-by",
+			"value": "",
+			"type": "text"
+		}
+	],
+	"triggers": [],
+	"noteNameFormat": "{{title}}",
+	"path": "Clippings",
+	"context": "{{selectorHtml:article|markdown}}"
+}
